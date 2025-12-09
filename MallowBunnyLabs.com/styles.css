@@ -1,0 +1,108 @@
+/* Neon sci-fi pink + purple theme */
+
+body {
+  margin: 0;
+  background: #0a0014;
+  color: #f0e6ff;
+  font-family: 'Creepster', "Segoe UI", sans-serif; /* spooky fallback for tagline */
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 180px;
+  margin-top: 40px;
+  filter: drop-shadow(0 0 12px #ff4dfc);
+}
+
+/* Headers & intro use rounded legible font */
+h1, h2, .intro p, button {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Tagline stays spooky */
+.tagline {
+  font-family: 'Creepster', "Segoe UI", sans-serif;
+  margin-top: -10px;
+  color: #c18cff;
+  font-size: 1.2rem;
+}
+
+/* Sections */
+.intro, #lab {
+  padding: 40px;
+}
+
+/* Hidden lab section */
+.hidden {
+  display: none;
+}
+
+/* Neon button styling */
+button {
+  background: #ff4dfc;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #0a0014;
+  font-weight: bold;
+  box-shadow: 0 0 14px #ff4dfc;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  box-shadow: 0 0 24px #ff4dfc, 0 0 36px #d14cff;
+  transform: scale(1.05);
+}
+
+/* Contact form styling */
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+#contactForm label {
+  align-self: flex-start;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: #ffbaff;
+  text-shadow: 0 0 6px #d14cff;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  box-shadow: 0 0 8px #ff4dfc;
+  background: #1a001f;
+  color: #f0e6ff;
+}
+
+/* Success message */
+.form-message {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #9b8cff;
+  text-shadow: 0 0 4px #d14cff;
+}
+
+/* Footer */
+.footer {
+  margin-top: 60px;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #9b8cff;
+  text-shadow: 0 0 6px #d14cff;
+}

@@ -1,15 +1,17 @@
-// Grab the button and the hidden lab section
+// Show the lab section when clicking "Enter the Lab"
 const enterBtn = document.getElementById("enterBtn");
 const labSection = document.getElementById("lab");
 
-// Add click behavior
 enterBtn.addEventListener("click", () => {
-  // Reveal the hidden lab section
   labSection.classList.remove("hidden");
-
-  // Scroll to it smoothly
   labSection.scrollIntoView({ behavior: "smooth" });
-
-  // Hide the button after click
   enterBtn.style.display = "none";
+});
+
+// Optional: show inline message when form is submitted (Netlify will handle actual email)
+const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
+
+contactForm.addEventListener("submit", () => {
+  formMessage.textContent = "Sending…";
 });
