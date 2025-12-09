@@ -94,8 +94,8 @@ button:hover {
 .form-message {
   margin-top: 12px;
   font-size: 0.95rem;
-  color: #9b8cff;
-  text-shadow: 0 0 4px #d14cff;
+  color: #ffbaff;  /* pink by default */
+  text-shadow: 0 0 6px #d14cff;
 }
 
 /* Footer */
