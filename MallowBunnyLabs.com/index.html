@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -13,6 +13,7 @@
 </head>
 <body>
   <div class="container">
+    
     <header>
       <img src="assets/logo.png" alt="MallowBunny Logo" class="logo" />
       <h1>MallowBunny Laboratories</h1>
@@ -29,20 +30,21 @@
       <h2>The Lab</h2>
       <p>Reach out to MallowBunny Laboratories:</p>
 
-    <form name="contact" method="POST" data-netlify="true" netlify>
-      <input type="hidden" name="form-name" value="contact" />
+      <!-- Contact Form -->
+      <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify>
+        <input type="hidden" name="form-name" value="contact" />
 
-      <label>Name:</label>
-      <input type="text" name="name" id="name">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
 
-      <label>Email:</label>
-      <input type="email" name="email" id="email">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
 
-      <label>Message:</label>
-      <textarea name="message" id="message"></textarea>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message"></textarea>
 
-    <button type="submit">Send</button>
-</form>
+        <button type="submit">Send</button>
+      </form>
 
       <p id="formMessage" class="form-message"></p>
     </section>
@@ -50,6 +52,7 @@
     <footer class="footer">
       &copy; 2025 TidyBar.llc. All rights reserved.
     </footer>
+
   </div>
 
   <!-- JS -->
