@@ -29,28 +29,30 @@
       <p>Reach out to MallowBunny Laboratories:</p>
 
       <!-- Contact Form -->
-      <form 
-        id="contactForm" 
-        name="contact" 
-        method="POST" 
-        data-netlify="true" 
-        netlify 
-        action="/thank-you.html"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="subject" value="New message from MallowBunnyLabs.com">
+    <form
+      id="contactForm"
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      action="/thank-you.html"
+>
+  <input type="hidden" name="form-name" value="contact">
 
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" />
+  <input type="hidden" name="subject" value="New message from MallowBunnyLabs.com">
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" />
+  <input type="hidden" name="bot-field">
 
-        <label for="message">Message:</label>
-        <textarea name="message" id="message"></textarea>
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name">
 
-        <button type="submit">Send</button>
-      </form>
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email">
+
+  <label for="message">Message:</label>
+  <textarea name="message" id="message"></textarea>
+
+  <button type="submit">Send</button>
+</form>
 
       <p id="formMessage" class="form-message"></p>
     </section>
