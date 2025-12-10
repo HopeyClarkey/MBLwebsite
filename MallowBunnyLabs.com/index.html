@@ -1,16 +1,14 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MallowBunny Laboratories</title>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <div class="container">
     
@@ -31,8 +29,16 @@
       <p>Reach out to MallowBunny Laboratories:</p>
 
       <!-- Contact Form -->
-      <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify>
+      <form 
+        id="contactForm" 
+        name="contact" 
+        method="POST" 
+        data-netlify="true" 
+        netlify 
+        action="/thank-you.html"
+      >
         <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="subject" value="New message from MallowBunnyLabs.com">
 
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" />
@@ -55,7 +61,6 @@
 
   </div>
 
-  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>

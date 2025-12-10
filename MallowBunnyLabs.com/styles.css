@@ -106,3 +106,23 @@ button:hover {
   color: #9b8cff;
   text-shadow: 0 0 6px #d14cff;
 }
+
+/* 🔮 Neon return-home button styling */
+.button {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #ff4dfc;
+  color: #0a0014;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 14px #ff4dfc;
+  transition: 0.3s ease;
+  margin-top: 20px;
+}
+
+.button:hover {
+  box-shadow: 0 0 24px #ff4dfc, 0 0 36px #d14cff;
+  transform: scale(1.05);
+}
