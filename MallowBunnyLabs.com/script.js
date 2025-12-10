@@ -1,4 +1,3 @@
-// 1️⃣ Show the lab section when clicking "Enter the Kitchen"
 const enterBtn = document.getElementById("enterBtn");
 const labSection = document.getElementById("lab");
 
@@ -8,18 +7,18 @@ enterBtn.addEventListener("click", () => {
   enterBtn.style.display = "none"; // hide button after click
 });
 
-// 2️⃣ Custom validation for contact form
+// Custom validation for contact form (Netlify compatible)
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
 
 contactForm.addEventListener("submit", (e) => {
-  e.preventDefault(); // prevent default submission until validated
-
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const message = document.getElementById("message").value.trim();
 
+  // BLOCK submission ONLY if invalid
   if (!name) {
+    e.preventDefault();
     formMessage.textContent = "💖 Oops! Please fill out your name.";
     formMessage.style.color = "#ffbaff";
     formMessage.style.textShadow = "0 0 6px #d14cff";
@@ -28,6 +27,7 @@ contactForm.addEventListener("submit", (e) => {
   }
 
   if (!email) {
+    e.preventDefault();
     formMessage.textContent = "💖 Oops! Please fill out your email.";
     formMessage.style.color = "#ffbaff";
     formMessage.style.textShadow = "0 0 6px #d14cff";
@@ -36,6 +36,7 @@ contactForm.addEventListener("submit", (e) => {
   }
 
   if (!message) {
+    e.preventDefault();
     formMessage.textContent = "💖 Oops! Please fill out your message.";
     formMessage.style.color = "#ffbaff";
     formMessage.style.textShadow = "0 0 6px #d14cff";
@@ -43,7 +44,7 @@ contactForm.addEventListener("submit", (e) => {
     return;
   }
 
-  // All fields valid — submit to Netlify
+  //  VALID — allow Netlify to submit normally
   formMessage.textContent = "Sending…";
-  contactForm.submit();
+  // do NOT preventDefault — Netlify needs the real form submission
 });
